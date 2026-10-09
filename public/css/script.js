@@ -60,3 +60,35 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
     }
   });
 <!-- End Anti Copy Source -->
+
+// FIXED: Hiển thị tên khách và mã đơn từ URL ?ten=&booking_id=
+  (function(){
+    const p = new URLSearchParams(window.location.search);
+    const ten = p.get('ten');
+    const id = p.get('booking_id');
+    const diem = p.get('diem');
+    const loai = p.get('loai');
+    const el = document.getElementById('customerInfo');
+    const title = document.getElementById('thankTitle');
+    
+    if (ten && el) {
+      let txt = 'Cảm ơn anh/chị ' + ten;
+      if (id) txt += ' • Mã đơn: ' + id;
+      el.textContent = txt;
+    } else if (id && el) {
+      el.textContent = 'Mã đơn của bạn: ' + id;
+    }
+
+    // Nếu có điểm đi, hiện thêm vào đoạn p đầu
+    if (diem) {
+      const firstP = document.querySelector('.card p');
+      if (firstP) {
+        firstP.innerHTML += '<br><span style="color:#1f1b15">Tuyến: <strong>' + diem + '</strong>' + (loai ? ' • ' + loai : '') + '</span>';
+      }
+    }
+
+    // Google Ads / GTM conversion event nếu có
+    if (window.dataLayer) {
+      window.dataLayer.push({ event: 'booking_success', booking_id: id, customer_name: ten });
+    }
+  })();
