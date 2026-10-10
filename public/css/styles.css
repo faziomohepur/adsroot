@@ -51,11 +51,12 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 .btn {
   display: inline-flex;  /* hoặc flex / block */
   align-items: center;
-  gap: 8px;
-  padding: 11px 20px;
+  gap: 5px;
+  padding: 6px 20px;
   border-radius: 999px;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 999;
+  font-size: 20px;
+  text-color: var(--gold);
   border: 2px solid transparent;
   cursor: pointer;
   transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
@@ -89,17 +90,17 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   gap: 16px;
   height: 76px;
 }
-.brand { display: flex; align-items: center; gap: 22px; }
+.brand { display: flex; align-items: center; gap: 12px; }
 .brand__mark {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 35px;
-  border-radius: 12px;
+  width: 50px;
+  height: 40px;
+  border-radius: 9px;
   background: linear-gradient(135deg, var(--green-500), var(--green-800));
   color: #fff;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: .5px;
   flex-shrink: 0;
 }
