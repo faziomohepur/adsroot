@@ -62,28 +62,6 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   white-space: nowrap;
 }
 
-.btn-tetle {
-  position: relative;
-  display: inline-flex;
-  overflow: visible;
-  isolation: isolate;
-  animation: none;
-}
-
-.btn-tetle::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 999px;
-  background: inherit;
-  z-index: -1;
-  animation: ripple-call 0.7s infinite;
-}
-
-.btn-nav {
-	display: inline-flex;
-	margin-left: 25px;
-}
 .btn:hover { transform: translateY(-1px); }
 .btn--primary { background: var(--green-600); color: #fff; box-shadow: var(--shadow-sm); }
 .btn--primary:hover { background: var(--green-700); box-shadow: var(--shadow-md); }
@@ -159,7 +137,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   color: #fff;
 }
 .hero__bg { position: absolute; inset: 0; z-index: 0; }
-.hero__bg img { width: 100%; height: 100%; object-fit: cover; }
+.hero__bg img { width: 100%; height: 100%; object-fit: fit; }
 .hero__overlay {
   position: absolute; inset: 0;
   background: linear-gradient(115deg, rgba(6,42,29,.92) 0%, rgba(8,60,42,.82) 45%, rgba(10,70,48,.55) 100%);
@@ -413,10 +391,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 
 /* mobile call bar - 1 nút duy nhất, hiệu ứng 100% giống hero__cta btn-call */
 .mobile-callbar {
-  display: flex;	
-	display: flex;
-	justify-content: center;
-  align-items: center;
+  display: none;	
   position: fixed;
   bottom: 0; left: 0; right: 0;
   z-index: 60;
@@ -425,6 +400,8 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   box-shadow: 0 -4px 16px rgba(0,0,0,.08);
   padding: 10px 12px;
   padding-bottom: calc(10px + env(safe-area-inset-bottom));
+	justify-content: center;
+  align-items: center;
 }
 .mobile-callbar__btn {
   width: 350px;
@@ -540,3 +517,25 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 .icon-tiktok { background: #000000; }
 .icon-zalo { background: #0068FF; font-weight: 900; font-family: sans-serif; }
 
+.btn-tetle {
+  position: relative;
+  display: inline-flex;
+  overflow: visible;
+  isolation: isolate;
+  animation: none;
+}
+
+.btn-tetle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: inherit;
+  z-index: -2;
+  animation: ripple-call 0.7s infinite;
+}
+
+.btn-nav {
+	display: inline-flex;
+	margin-left: -30px;
+}
