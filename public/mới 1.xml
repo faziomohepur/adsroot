@@ -1,0 +1,48 @@
+
+ <!-- SERVICES -->
+  <section class="section section--alt" id="dich-vu">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">CHÚNG TÔI CUNG CẤP</span>
+        <h2>DỊCH VỤ TAXI 4 CHỔ-7 CHỔ RẠCH GIÁ</h2>
+        <p>Đáp ứng đa dạng nhu cầu di chuyển bằng xe điện tại Rạch Giá và khu vực Kiên Giang.</p>
+				</div>
+				<div class="grid grid--3">
+        <div class="service">
+          <div class="service__icon">✈️</div>
+          <h3>Đưa Đón Sân Bay</h3>
+          <p>Đưa đón sân bay Rạch Giá nhanh chóng, đúng giờ bay, hỗ trợ hành lý.</p>
+          <a href="tel:0775856456" class="service__link">Đặt xe ngay →</a>
+        </div>
+        <div class="service">
+          <div class="service__icon">🚢</div>
+          <h3>Đưa Đón Bến Tàu</h3>
+          <p>Đưa đón bến tàu cao tốc đi Phú Quốc, Nam Du thuận tiện, tiết kiệm thời gian.</p>
+          <a href="tel:0775856456" class="service__link">Đặt xe ngay →</a>
+        </div>
+        <div class="service">
+          <div class="service__icon">🏙️</div>
+          <h3>Tham Quan Nội Ô</h3>
+          <p>Xe 4C-7C tham quan trung tâm thành phố, chợ đêm, phố đi bộ, di tích lịch sử.</p>
+          <a href="tel:0775856456" class="service__link">Đặt xe ngay →</a>
+        </div>
+        <div class="service">
+          <div class="service__icon">💍</div>
+          <h3>Xe Cưới Hỏi, Sự Kiện</h3>
+          <p>Trang trí theo yêu cầu, phục vụ đoàn rước dâu, lễ hội, sự kiện doanh nghiệp.</p>
+          <a href="tel:0775856456" class="service__link">Đặt xe ngay →</a>
+        </div>
+        <div class="service">
+          <div class="service__icon">📄</div>
+          <h3>Hợp Đồng Theo Giờ/Ngày</h3>
+          <p>Thuê xe điện theo giờ, theo ngày cho công ty, đoàn khách, nhóm gia đình.</p>
+          <a href="tel:0775856456" class="service__link">Đặt xe ngay →</a>
+        </div>
+        <div class="service">
+          <div class="service__icon">🗺️</div>
+          <h3>Đưa Đón Trong/Ngoài Tỉnh</h3>
+          <p>Kết nối Rạch Giá với Hà Tiên, Châu Đốc và các điểm du lịch lân cận.</p>
+          <a href="tel:0775856456" class="service__link">Đặt xe ngay →</a>
+        </div>
+      </div>
+	</section>

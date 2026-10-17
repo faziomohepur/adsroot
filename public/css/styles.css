@@ -19,6 +19,7 @@
   --radius: 16px;
   --radius-sm: 10px;
   --container: 1180px;
+	--container-pill: 1180px;
   --font: 'Be Vietnam Pro', 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
@@ -45,6 +46,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   margin: 0 auto;
   padding: 0 24px;
 }
+
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
 
 /* ===== Buttons ===== */
@@ -90,7 +92,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
   gap: 16px;
   height: 76px;
 }
-.brand { display: flex; align-items: center; gap: 22px; }
+.brand { display: flex; align-items: center; gap: 5px; }
 .brand__mark {
   display: grid;
   place-items: center;
@@ -193,7 +195,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 .section-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
 .eyebrow {
   display: inline-block;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -230,7 +232,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 .card h3 { font-size: 18px; color: var(--green-900); }
 .card p { font-size: 14.5px; margin-bottom: 0; }
 
-/* Services */
+/* Services */   
 .service {
   background: #fff;
   border: 1px solid var(--border);
@@ -250,7 +252,7 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 .table-wrap { overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow-sm); border: 1px solid var(--border); }
 .price-table { width: 100%; border-collapse: collapse; min-width: 480px; background: #fff; }
 .price-table th, .price-table td { padding: 16px 20px; text-align: left; font-size: 15px; }
-.price-table thead th { background: var(--green-800); color: #fff; font-weight: 700; }
+.price-table thead th { background: var(--green-500); color: #fff; font-weight: 700; }
 .price-table tbody tr:nth-child(even) { background: var(--paper-alt); }
 .price-table tbody td:first-child { font-weight: 600; color: var(--green-900); }
 .price-note { font-size: 14px; margin-top: 14px; color: var(--ink-500); }
@@ -537,5 +539,5 @@ svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 
 .btn-nav {
 	display: inline-flex;
-	margin-left: -30px;
+	margin-left: 20px;
 }
